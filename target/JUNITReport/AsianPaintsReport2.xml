@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="149.995" tests="3" skipped="0" failures="1" errors="0">
+<testcase classname="To test functionality in HomeDecor" name="To validate that the stores are visible in furniture page" time="54.628">
+<system-out><![CDATA[
+Given user is on homepage and User hover on HomeDecor.......................passed
+When Click on furniture option..............................................passed
+And Scroll downward.........................................................passed
+And Select furniture type as Sofa and city as Jaipur from given dropdown list.passed
+And Click on find store.....................................................passed
+Then It should  display stores..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test functionality in HomeDecor" name="To validate that the user is able to enquiry about Wallpaper installation - Example #1.1" time="43.064">
+<system-out><![CDATA[
+Given user is on homepage and User hover on HomeDecor.......................passed
+When Click on Wallpapers....................................................passed
+And Scroll downwards........................................................passed
+And Enter Ishikaa , abcd@gmail.com , 7694099160 , 451011....................passed
+And Click Enquiry Now.......................................................passed
+Then User is able to Enquire successfully...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test functionality in HomeDecor" name="To validate that the pincode under wallpaper is servicable" time="52.11">
+<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
+  (Session info: chrome=123.0.6312.122)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c8a84feea137fcfb13bba94805ae7417, clickElement {id=f.1DE72AFC8A3453748DA27FDA95428085.d.7283F2CF97D3991BD5F51C8EDD84283B.e.616}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53922}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53922/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c8a84feea137fcfb13bba94805ae7417)] -&gt; xpath: //img[@src=&quot;/content/dam/asian_paints/wall-coverings/indie-boho/roomshots/W173XU17N75_02.jpg.transform/cc-width-302-height-302/image.jpg&quot;]]
+Session ID: c8a84feea137fcfb13bba94805ae7417">
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=123.0.6312.122)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c8a84feea137fcfb13bba94805ae7417, clickElement {id=f.1DE72AFC8A3453748DA27FDA95428085.d.7283F2CF97D3991BD5F51C8EDD84283B.e.616}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53922}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53922/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c8a84feea137fcfb13bba94805ae7417)] -> xpath: //img[@src="/content/dam/asian_paints/wall-coverings/indie-boho/roomshots/W173XU17N75_02.jpg.transform/cc-width-302-height-302/image.jpg"]]
+Session ID: c8a84feea137fcfb13bba94805ae7417
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at Pages.PageFactory1.product(PageFactory1.java:189)
+	at Step_Definition.step_definition.click_on_product(step_definition.java:135)
+	at ✽.Click on product(file:///C:/Users/IBHAWSAR/Desktop/AsianPaints/src/test/resource/Features/HomeDecor.feature:32)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on homepage and User hover on HomeDecor.......................passed
+When Click on Wallpaper.....................................................passed
+And Click on Know more......................................................passed
+And Choose Red as filter....................................................passed
+And Click on product........................................................failed
+And scroll down.............................................................skipped
+And Enter "<pincode>".......................................................skipped
+And Click on check..........................................................skipped
+Then It will display THIS PIN CODE IS SERVICEABLE...........................skipped
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-17T12:45:58 IST" name="Default suite" finished-at="2024-04-17T12:47:09 IST" duration-ms="71815">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@5fb759d6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-04-17T12:45:58 IST" name="Default test" finished-at="2024-04-17T12:47:09 IST" duration-ms="71815">
+      <class name="Runner.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.Runner@5fb759d6]" started-at="2024-04-17T12:45:58 IST" name="setUpClass" finished-at="2024-04-17T12:45:58 IST" duration-ms="231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@57cabdc3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@5fb759d6]" started-at="2024-04-17T12:45:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-17T12:46:06 IST" duration-ms="8322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the stores are visible in furniture page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test functionality in HomeDecor"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@5fb759d6]" started-at="2024-04-17T12:46:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-17T12:46:22 IST" duration-ms="16276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the user is able to enquiry about Wallpaper installation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test functionality in HomeDecor"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@5fb759d6]" started-at="2024-04-17T12:46:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-17T12:46:38 IST" duration-ms="15193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the pincode under wallpaper is servicable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test functionality in HomeDecor"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@5fb759d6]" started-at="2024-04-17T12:46:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-17T12:46:53 IST" duration-ms="15343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the pincode under wallpaper is not servicable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test functionality in HomeDecor"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@5fb759d6]" started-at="2024-04-17T12:46:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-17T12:47:09 IST" duration-ms="16401" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the product is getting added to cart on clicking ADD TO CART"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test functionality in HomeDecor"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Product successfully added to cart.] but found [Currently out of stock.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Product successfully added to cart.] but found [Currently out of stock.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at Step_Definition.step_definition.it_will_navigate_to_the_cart(step_definition.java:218)
+at ✽.It will navigate to the Cart(file:///C:/Users/IBHAWSAR/Desktop/AsianPaints/src/test/resource/Features/HomeDecor.feature:64)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.Runner@5fb759d6]" started-at="2024-04-17T12:47:09 IST" name="tearDownClass" finished-at="2024-04-17T12:47:09 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

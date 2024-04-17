@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="86.18" tests="5" skipped="0" failures="1" errors="0">
+<testcase classname="To test functionality in HomeDecor" name="To validate that the stores are visible in furniture page" time="9.383">
+<system-out><![CDATA[
+Given user is on homepage and User hover on HomeDecor.......................passed
+When Click on furniture option..............................................passed
+And Scroll downward.........................................................passed
+And Select furniture type as Sofa and city as Jaipur from given dropdown list.passed
+And Click on find store.....................................................passed
+Then It should  display stores..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test functionality in HomeDecor" name="To validate that the user is able to enquiry about Wallpaper installation - Example #1.1" time="14.355">
+<system-out><![CDATA[
+Given user is on homepage and User hover on HomeDecor.......................passed
+When Click on Wallpapers....................................................passed
+And Scroll downwards........................................................passed
+And Enter Ishikaa , abcd@gmail.com , 7694099160 , 451011....................passed
+And Click Enquiry Now.......................................................passed
+Then User is able to Enquire successfully...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test functionality in HomeDecor" name="To validate that the pincode under wallpaper is servicable" time="19.292">
+<system-out><![CDATA[
+Given user is on homepage and User hover on HomeDecor.......................passed
+When Click on Wallpaper.....................................................passed
+And Click on Know more......................................................passed
+And Choose Red as filter....................................................passed
+And Click on product........................................................passed
+And scroll down.............................................................passed
+And Enter serviceable "<pincode>"...........................................passed
+And Click on check..........................................................passed
+Then It will display THIS PIN CODE IS SERVICEABLE...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test functionality in HomeDecor" name="To validate that the pincode under wallpaper is not servicable" time="20.167">
+<system-out><![CDATA[
+Given user is on homepage and User hover on HomeDecor.......................passed
+When Click on Wallpaper.....................................................passed
+And Click on Know more......................................................passed
+And Choose Red as filter....................................................passed
+And Click on product........................................................passed
+And scroll down.............................................................passed
+And Enter non serviceable pincode...........................................passed
+And Click on check..........................................................passed
+Then It will display THIS PIN CODE IS NOT SERVICEABLE.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test functionality in HomeDecor" name="To validate that the product is getting added to cart on clicking ADD TO CART" time="22.766">
+<failure type="java.lang.AssertionError" message="expected [Product successfully added to cart.] but found [Currently out of stock.]">
+<![CDATA[java.lang.AssertionError: expected [Product successfully added to cart.] but found [Currently out of stock.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at Step_Definition.step_definition.it_will_navigate_to_the_cart(step_definition.java:211)
+	at ✽.It will navigate to the Cart(file:///C:/Users/IBHAWSAR/Desktop/AsianPaints/src/test/resource/Features/HomeDecor.feature:64)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on homepage and User hover on HomeDecor.......................passed
+When Click on Wallpaper.....................................................passed
+And Click on Know more......................................................passed
+And Choose Red as filter....................................................passed
+And Click on product........................................................passed
+And scroll down.............................................................passed
+And Enter serviceable pincode...............................................passed
+And Click on check..........................................................passed
+And Click on ADD TO CART....................................................passed
+Then It will navigate to the Cart...........................................failed
+]]></system-out>
+</testcase>
+</testsuite>

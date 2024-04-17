@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="8.263" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="To test functionality in HomeDecor" name="To validate that the stores are visible in furniture page" time="8.113">
+<system-out><![CDATA[
+Given user is on homepage and User hover on HomeDecor.......................passed
+When Click on furniture option..............................................passed
+And Scroll downward.........................................................passed
+And Select furniture type as Sofa and city as Jaipur from given dropdown list.passed
+And Click on find store.....................................................passed
+Then It should  display stores..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
